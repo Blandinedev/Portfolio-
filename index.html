@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio </title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <i class="fa-solid fa-laptop-code"></i> BLANDINE
+  </div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <nav id="menu">
+    <a href="#accueil"><i class="fa-solid fa-house"></i> Accueil</a>
+    <a href="#apropos"><i class="fa-solid fa-user"></i> À propos</a>
+    <a href="#competences"><i class="fa-solid fa-code"></i> Compétences</a>
+    <a href="#experiences"><i class="fa-solid fa-briefcase"></i> Expériences</a>
+    <a href="#projets"><i class="fa-solid fa-diagram-project"></i> Projets</a>
+    <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Éducation</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <div class="text">
+    <p class="welcome">
+      <i class="fa-solid fa-star"></i> Bienvenue dans mon portfolio
+    </p>
+
+    <h1>
+      Bonjour, je m'appelle <br>
+      <span>RAZANAMIALY Blandine</span>
+    </h1>
+
+    <h2>
+      Développeuse Web Junior – <span>HTML, CSS, JavaScript, PHP</span>
+    </h2>
+
+    <p class="description">
+      Jeune diplômée en informatique passionnée par le développement web, la création
+      d’interfaces modernes et la conception d’applications utiles, performantes et responsives.
+    </p>
+
+    <div class="buttons">
+      <a href="mailto:razanamialyblandine@gmail.com" class="contact-btn">
+        <i class="fa-solid fa-paper-plane"></i> Me contacter
+      </a>
+
+      <a href="cv_Blandine.pdf" class="cv-btn" download>
+        <i class="fa-solid fa-download"></i> Télécharger CV
+      </a>
+
+      <a href="https://wa.me/261338177196" class="whatsapp-btn" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="image">
+    <div class="circle">
+      <img src="Images/photo.jpg" alt="Photo Blandine">
+    </div>
+  </div>
+</section>
+
+<!-- A PROPOS -->
+<section class="section reveal" id="apropos">
+  <h2 class="title"><i class="fa-solid fa-user"></i> À propos de moi</h2>
+
+  <div class="about-box">
+    <p>
+      Je suis une jeune diplômée en informatique, passionnée par le développement web
+      et la création d’applications modernes. J’aime concevoir des interfaces propres,
+      responsives et faciles à utiliser, ainsi que développer des solutions pratiques
+      adaptées aux besoins des utilisateurs.
+    </p>
+  </div>
+</section>
+
+<!-- COMPETENCES -->
+<section class="section reveal" id="competences">
+  <h2 class="title"><i class="fa-solid fa-code"></i> Compétences</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+      <p>HTML, CSS, JavaScript, Responsive Design</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fa-solid fa-server"></i> Backend</h3>
+      <p>PHP, notions Node.js</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fa-solid fa-database"></i> Base de données</h3>
+      <p>MySQL, SQLite, MongoDB</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="section reveal" id="experiences">
+  <h2 class="title"><i class="fa-solid fa-briefcase"></i> Expériences</h2>
+
+  <div class="card">
+    <h3>Projets académiques et personnels en développement web</h3>
+    <p>
+      Réalisation de sites web responsives et d’applications de gestion avec HTML, CSS,
+      JavaScript, PHP et base de données.
+    </p>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section class="section reveal" id="projets">
+  <h2 class="title"><i class="fa-solid fa-diagram-project"></i> Mes Projets</h2>
+
+  <div class="cards projets-grid">
+
+    <!-- PROJET 1 -->
+    <div class="card projet-card">
+      <img src="Images/expense-tracker.jpg" alt="Expense Tracker" class="project-img">
+
+      <h3>Expense Tracker</h3>
+
+      <p>
+        Application web de gestion des revenus et dépenses avec authentification,
+        dashboard, historique des transactions, recherche, filtres et statistiques.
+      </p>
+
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>PHP</span>
+        <span>SQLite</span>
+        <span>Chart.js</span>
+      </div>
+
+      <div class="project-buttons">
+        <a href="#" class="btn-project" target="_blank">
+          <i class="fa-solid fa-eye"></i> Voir le projet
+        </a>
+
+        <a href="#" class="btn-project github" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- PROJET 2 -->
+    <div class="card projet-card">
+      <img src="Images/portfolio.jpg" alt="Portfolio Personnel" class="project-img">
+
+      <h3>Portfolio Personnel</h3>
+
+      <p>
+        Site personnel moderne et responsive présentant mon profil, mes compétences,
+        mes projets, mon parcours et mes coordonnées.
+      </p>
+
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="project-buttons">
+        <a href="#" class="btn-project" target="_blank">
+          <i class="fa-solid fa-eye"></i> Voir le site
+        </a>
+      </div>
+    </div>
+
+    <!-- PROJET 3 -->
+    <div class="card projet-card">
+      <img src="Images/gestion-etudiant.jpg" alt="Gestion Étudiants" class="project-img">
+
+      <h3>Application Gestion des Étudiants</h3>
+
+      <p>
+        Application de gestion permettant d’enregistrer, consulter et organiser
+        les informations des étudiants avec une base de données.
+      </p>
+
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+      </div>
+
+      <div class="project-buttons">
+        <a href="#" class="btn-project" target="_blank">
+          <i class="fa-solid fa-eye"></i> Voir le projet
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section reveal" id="education">
+  <h2 class="title"><i class="fa-solid fa-graduation-cap"></i> Éducation</h2>
+
+  <div class="card">
+    <h3>Licence Professionnelle en Informatique de Gestion</h3>
+    <p><strong>2022 - 2025</strong></p>
+    <h4>Institut Supérieur d’Informatique Andranomena</h4>
+
+    <p>Formation en développement web, programmation et base de données.</p>
+
+  </div>
+    
+<div class="card">
+    <h3>Baccalaureat Serie A2</h3>
+    <p><strong>2021 - 2022</strong></p>
+    <h4>Lycée Privé FJKM Ambatomanga</h4>
+
+ 
+  </div>   
+
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal" id="contact">
+  <h2 class="title"><i class="fa-solid fa-envelope"></i> Contact</h2>
+
+  <div class="contact-box">
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:razanamialyblandine@gmail.com">razanamialyblandine@gmail.com</a>
+    </p>
+
+    <p>
+      <i class="fa-solid fa-phone"></i>
+      <a href="https://api.whatsapp.com/send?phone=261338177196" target="_blank">
+    WhatsApp
+</a>
+    </p>
+
+    <p>
+      <i class="fa-brands fa-whatsapp"></i>
+      <a href="https://wa.me/261338177196" target="_blank">WhatsApp</a>
+    </p>
+
+    <p>
+      <i class="fa-solid fa-location-dot"></i>
+      Ambohibao Antehirioka, Antananarivo
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Blandine - Portfolio Développeuse Web
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+
+  function revealSections() {
+    let reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(section => {
+      let windowHeight = window.innerHeight;
+      let revealTop = section.getBoundingClientRect().top;
+      let revealPoint = 100;
+
+      if (revealTop < windowHeight - revealPoint) {
+        section.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealSections);
+  window.addEventListener("load", revealSections);
+</script>
+
+</body>
+</html>
